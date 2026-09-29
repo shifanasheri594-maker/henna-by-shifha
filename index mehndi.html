@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Henna by Shifha | Bridal & Party Mehndi in Malappuram, Kerala</title>
+<meta name="description" content="Henna by Shifha: bridal, Arabic, floral and minimal mehndi artist in Malappuram, Kerala. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --henna:#3b1a0e;      /* fresh henna paste, deep brown */
+  --stain:#8a3b1c;      /* the orange-red stain after a day */
+  --marigold:#d9a441;   /* wedding marigold */
+  --leaf:#5c6b3a;       /* mehndi leaf green */
+  --blush:#f7ebe4;
+  --paper:#fffaf6;
+  --ink:#2a140b;
+  --muted:#6f5548;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:var(--sans);font-weight:300;color:var(--ink);background:var(--paper);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1}
+a{color:inherit}
+img,svg{max-width:100%}
+:focus-visible{outline:2px solid var(--marigold);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+h2{font-size:clamp(2.2rem,5vw,3.4rem);color:var(--henna);margin-bottom:14px}
+.lead{max-width:56ch;color:var(--muted)}
+.divider{display:block;width:120px;height:14px;margin:0 0 28px}
+.center{text-align:center}
+.center .lead,.center .divider{margin-left:auto;margin-right:auto}
+
+/* Nav */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+header.solid{background:rgba(59,26,14,.96);box-shadow:0 2px 20px rgba(0,0,0,.2)}
+nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:#fff;text-decoration:none;letter-spacing:.02em}
+.logo span{color:var(--marigold);font-style:italic;font-weight:400}
+.links{display:flex;gap:30px;list-style:none;align-items:center}
+.links a{color:#f3e2d6;text-decoration:none;font-size:.95rem;letter-spacing:.04em;position:relative}
+.links a:not(.pill)::after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:var(--marigold);transition:width .25s}
+.links a:not(.pill):hover::after{width:100%}
+.pill{background:var(--marigold);color:var(--henna)!important;padding:8px 20px;border-radius:99px;font-weight:500}
+.burger{display:none;background:none;border:0;cursor:pointer;width:40px;height:40px;position:relative}
+.burger span,.burger span::before,.burger span::after{position:absolute;left:8px;width:24px;height:2px;background:#fff;content:"";transition:transform .25s}
+.burger span{top:19px}.burger span::before{top:-7px;left:0}.burger span::after{top:7px;left:0}
+.burger[aria-expanded=true] span{background:transparent}
+.burger[aria-expanded=true] span::before{transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded=true] span::after{transform:translateY(-7px) rotate(-45deg)}
+
+/* Hero */
+#home{min-height:100vh;min-height:100svh;background:radial-gradient(ellipse at 70% 40%,#5a2a16 0%,var(--henna) 60%,#25100a 100%);color:#fff;display:flex;align-items:center;position:relative;overflow:hidden;padding:110px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero-mandala{width:100%;max-width:460px;justify-self:center}
+.hero-mandala .draw path,.hero-mandala .draw circle,.hero-mandala .draw ellipse{fill:none;stroke:var(--marigold);stroke-width:1.2;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 3.2s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.kicker{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--marigold);margin-bottom:10px}
+#home h1{font-size:clamp(3rem,8vw,5.6rem);font-weight:500;margin-bottom:22px}
+#home h1 em{font-weight:400;color:var(--marigold)}
+#home p{max-width:46ch;color:#e9d3c4;margin-bottom:34px;font-size:1.05rem}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:99px;text-decoration:none;font-weight:500;font-size:1rem;transition:transform .2s,background .2s,color .2s;border:1.5px solid transparent;cursor:pointer;font-family:var(--sans)}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.btn-wa{background:#25a55a;color:#fff}
+.btn-wa:hover{background:#1e8e4d}
+.btn-ig{border-color:var(--marigold);color:var(--marigold)}
+.btn-ig:hover{background:var(--marigold);color:var(--henna)}
+.btn-dark{background:var(--henna);color:#fff}
+
+/* About */
+#about{background:var(--paper)}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:200px 200px 16px 16px;background:linear-gradient(160deg,var(--stain),var(--henna));display:grid;place-items:center;position:relative;overflow:hidden}
+.portrait svg{width:82%;opacity:.9}
+.about-grid p+p{margin-top:16px}
+.about-grid p{color:var(--muted)}
+.facts{display:flex;gap:36px;margin-top:30px;flex-wrap:wrap}
+.facts div{font-family:var(--serif);font-size:1.15rem;color:var(--henna)}
+.facts small{display:block;font-family:var(--sans);font-size:.85rem;color:var(--muted)}
+
+/* Services */
+#services{background:var(--blush)}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:48px}
+.card{background:var(--paper);padding:34px 28px;border-radius:120px 120px 14px 14px;text-align:center;border:1px solid #ecd6c8}
+.card:nth-child(even){border-radius:14px 14px 120px 120px}
+.card svg{width:54px;height:54px;margin-bottom:14px}
+.card h3{font-size:1.6rem;color:var(--henna);margin-bottom:8px}
+.card p{font-size:.95rem;color:var(--muted)}
+.note{margin-top:34px;text-align:center;color:var(--muted);font-size:.95rem}
+
+/* Gallery */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.tile{position:relative;aspect-ratio:1;border-radius:14px;overflow:hidden;background:var(--henna)}
+.tile:nth-child(3n+2){background:var(--stain)}
+.tile:nth-child(3n){background:#5a2a16}
+.tile svg,.tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.tile:hover svg,.tile:hover img{transform:scale(1.06)}
+.tile span{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 12px;background:linear-gradient(transparent,rgba(30,12,5,.75));color:#fff;font-family:var(--serif);font-size:1.25rem}
+.ig-cta{margin-top:40px;text-align:center}
+
+/* Contact */
+#contact{background:var(--henna);color:#fff}
+#contact h2{color:#fff}
+#contact .lead{color:#e2c9b8}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:44px}
+.info li{list-style:none;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.14);display:flex;gap:16px}
+.info b{font-family:var(--serif);font-weight:500;font-size:1.15rem;color:var(--marigold);min-width:96px}
+form{display:grid;gap:14px}
+label{font-size:.9rem;color:#e2c9b8}
+input,select,textarea{width:100%;padding:13px 16px;border-radius:10px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font:inherit;margin-top:4px}
+select option{color:#222}
+textarea{min-height:100px;resize:vertical}
+input::placeholder,textarea::placeholder{color:#b99c8b}
+footer{background:#25100a;color:#b99c8b;text-align:center;padding:28px 24px;font-size:.9rem}
+
+/* Floating WhatsApp */
+.float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25a55a;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.3);transition:transform .2s}
+.float:hover{transform:scale(1.08)}
+.float svg{width:30px;height:30px;fill:#fff}
+
+@media(max-width:860px){
+  section{padding:72px 0}
+  .burger{display:block}
+  .links{position:absolute;top:66px;left:0;right:0;background:var(--henna);flex-direction:column;padding:10px 24px 26px;gap:18px;display:none;align-items:flex-start}
+  .links.open{display:flex}
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-mandala{max-width:280px;order:-1}
+  #home{padding-top:96px}
+  .portrait{max-width:300px;margin:0 auto}
+  .grid{grid-template-columns:repeat(2,1fr);gap:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition:none!important}
+  .hero-mandala .draw *{stroke-dashoffset:0!important}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a href="#home" class="logo">Henna by <span>Shifha</span></a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+      <ul class="links" id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Henna Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="pill" href="https://wa.me/917907547210?text=Hi%20Shifha%2C%20I%27d%20like%20to%20book%20henna." target="_blank" rel="noopener">Book now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HOME -->
+<section id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Malappuram, Kerala</p>
+      <h1>Henna by <em>Shifha</em></h1>
+      <p>Fine, hand-drawn mehndi for brides, festivals and every little celebration. Rich stains, clean lines, and designs made around you.</p>
+      <div class="btns">
+        <a class="btn btn-wa" href="https://wa.me/917907547210?text=Hi%20Shifha%2C%20I%27d%20like%20to%20book%20henna." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1a15 15 0 0 1-6.2-4.5c-1.2-1.6-1.6-2.9-1.7-3.4-.1-.5.1-1.5.8-2 .3-.2.6-.2.8-.1l.6.1c.2 0 .4.1.6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.5.9 1.3 1.7 2.3 2.3.3.2.5.2.7 0l.7-.8c.2-.3.4-.3.7-.2l1.8.9c.3.1.5.2.5.4.1.3.1.9-.1 1.7z"/></svg>Book on WhatsApp</a>
+        <a class="btn btn-ig" href="https://instagram.com/henna.byshifha" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm5.2-3.2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>@henna.byshifha</a>
+      </div>
+    </div>
+    <svg class="hero-mandala" id="heroMandala" viewBox="-100 -100 200 200" aria-hidden="true"></svg>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="portrait" id="portrait" role="img" aria-label="Henna pattern illustration"></div>
+    <div>
+      <svg class="divider" viewBox="0 0 120 14" aria-hidden="true"><path d="M0 7h44M76 7h44" stroke="#d9a441" stroke-width="1"/><path d="M60 1l6 6-6 6-6-6z" fill="none" stroke="#8a3b1c" stroke-width="1.2"/></svg>
+      <h2>Hello, I'm Shifha</h2>
+      <p class="lead">I'm a henna artist based in Malappuram. Henna has been part of every celebration I grew up with, and I turned that love into a craft.</p>
+      <p>I mix my paste fresh and draw every design by hand, so no two sets are the same. Whether you want full bridal hands or a small motif for Eid, I'll shape the design around your outfit, your event and your taste.</p>
+      <div class="facts">
+        <div>Fresh paste<small>Natural, skin-friendly</small></div>
+        <div>Custom designs<small>Drawn for you</small></div>
+        <div>Home visits<small>Across Malappuram</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap center">
+    <svg class="divider" viewBox="0 0 120 14" aria-hidden="true"><path d="M0 7h44M76 7h44" stroke="#d9a441" stroke-width="1"/><path d="M60 1l6 6-6 6-6-6z" fill="none" stroke="#8a3b1c" stroke-width="1.2"/></svg>
+    <h2>Henna Services</h2>
+    <p class="lead">Choose a style below, or tell me what you have in mind and we'll design it together.</p>
+    <div class="svc" id="svc"></div>
+    <p class="note">Message me on WhatsApp with your date and design for a quote.</p>
+    <div class="btns" style="justify-content:center;margin-top:20px">
+      <a class="btn btn-dark" href="https://wa.me/917907547210?text=Hi%20Shifha%2C%20I%27d%20like%20a%20henna%20quote." target="_blank" rel="noopener">Ask for a quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap center">
+    <svg class="divider" viewBox="0 0 120 14" aria-hidden="true"><path d="M0 7h44M76 7h44" stroke="#d9a441" stroke-width="1"/><path d="M60 1l6 6-6 6-6-6z" fill="none" stroke="#8a3b1c" stroke-width="1.2"/></svg>
+    <h2>Gallery</h2>
+    <p class="lead">A look at the styles I draw. See recent work on Instagram.</p>
+    <!-- To use real photos: replace each <svg> inside a .tile with <img src="photo1.jpg" alt="Bridal henna" loading="lazy"> -->
+    <div class="grid" id="grid"></div>
+    <div class="ig-cta">
+      <a class="btn btn-ig" style="color:var(--stain);border-color:var(--stain)" href="https://instagram.com/henna.byshifha" target="_blank" rel="noopener">See more on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact &amp; Booking</h2>
+    <p class="lead">Book early for weddings and festival seasons. Send your details and I'll reply on WhatsApp.</p>
+    <div class="contact-grid">
+      <ul class="info">
+        <li><b>WhatsApp</b><a href="https://wa.me/917907547210" target="_blank" rel="noopener">+91 79075 47210</a></li>
+        <li><b>Instagram</b><a href="https://instagram.com/henna.byshifha" target="_blank" rel="noopener">@henna.byshifha</a></li>
+        <li><b>Location</b><span>Malappuram, Kerala</span></li>
+      </ul>
+      <form id="bookForm">
+        <div><label for="n">Your name</label><input id="n" required placeholder="Name"></div>
+        <div><label for="s">Style</label>
+          <select id="s"><option>Bridal henna</option><option>Arabic henna</option><option>Floral / Party henna</option><option>Minimal henna</option><option>Not sure yet</option></select></div>
+        <div><label for="d">Event date</label><input id="d" type="date"></div>
+        <div><label for="m">Message</label><textarea id="m" placeholder="Tell me about your event"></textarea></div>
+        <button class="btn btn-wa" type="submit">Send on WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>&copy; <span id="yr"></span> Henna by Shifha &middot; Malappuram, Kerala</footer>
+
+<a class="float" href="https://wa.me/917907547210?text=Hi%20Shifha%2C%20I%27d%20like%20to%20book%20henna." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1a15 15 0 0 1-6.2-4.5c-1.2-1.6-1.6-2.9-1.7-3.4-.1-.5.1-1.5.8-2 .3-.2.6-.2.8-.1l.6.1c.2 0 .4.1.6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.5.9 1.3 1.7 2.3 2.3.3.2.5.2.7 0l.7-.8c.2-.3.4-.3.7-.2l1.8.9c.3.1.5.2.5.4.1.3.1.9-.1 1.7z"/></svg></a>
+
+<script>
+/* Henna-style mandala generator: petals, dots and rings, drawn as line art */
+function mandala(o){
+  o=Object.assign({petals:12,rings:3,stroke:'#d9a441',draw:false,w:1.2,dots:true},o||{});
+  var s='<g'+(o.draw?' class="draw"':'')+' fill="none" stroke="'+o.stroke+'" stroke-width="'+o.w+'" stroke-linecap="round">';
+  var n=o.petals, i, r;
+  for(r=0;r<o.rings;r++){
+    var rad=14+r*22, len=16+r*4, wid=5+r*2.2;
+    s+='<circle r="'+(rad-3)+'" pathLength="1"/>';
+    for(i=0;i<n;i++){
+      var a=360/n*i+(r%2?180/n:0);
+      s+='<g transform="rotate('+a+')"><path pathLength="1" d="M0 -'+rad+' Q '+wid+' -'+(rad+len*.55)+' 0 -'+(rad+len)+' Q -'+wid+' -'+(rad+len*.55)+' 0 -'+rad+'z"/>';
+      if(o.dots) s+='<circle cx="0" cy="-'+(rad+len+4)+'" r="1.3" fill="'+o.stroke+'" stroke="none"/>';
+      s+='</g>';
+    }
+  }
+  s+='<circle r="6" pathLength="1"/><circle r="2" fill="'+o.stroke+'"/></g>';
+  return s;
+}
+function vine(stroke){
+  var s='<g fill="none" stroke="'+stroke+'" stroke-width="1.3" stroke-linecap="round">';
+  s+='<path d="M-90 60 C-40 20 -20 90 30 40 S80 -10 95 -50"/>';
+  for(var i=0;i<7;i++){var x=-70+i*26,y=[46,42,56,52,28,20,-8][i],d=i%2?-1:1;
+    s+='<path d="M'+x+' '+y+' q '+(8*d)+' -22 '+(16*d)+' -14 q -6 18 '+(-16*d)+' 14z"/>';}
+  s+='<circle cx="95" cy="-50" r="4"/><circle cx="-90" cy="60" r="3"/></g>';
+  return s;
+}
+function svg(inner,vb){return '<svg viewBox="'+(vb||'-100 -100 200 200')+'" preserveAspectRatio="xMidYMid slice" aria-hidden="true">'+inner+'</svg>';}
+
+document.getElementById('heroMandala').innerHTML = mandala({petals:12,rings:4,draw:true});
+document.getElementById('portrait').innerHTML = svg(mandala({petals:10,rings:3,stroke:'#f0d9b5',w:1}));
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* Services */
+var icon=function(c){return '<svg viewBox="-100 -100 200 200" aria-hidden="true">'+c+'</svg>'};
+var services=[
+ {t:'Bridal Henna',d:'Full hands and feet with detailed motifs, figures and personal touches for your big day.',i:mandala({petals:8,rings:2,stroke:'#8a3b1c',w:5,dots:false})},
+ {t:'Arabic Henna',d:'Bold flowing vines and open space. Quick to apply, striking on the hand.',i:vine('#8a3b1c').replace('1.3','6')},
+ {t:'Floral & Party',d:'Delicate florals and jaali work for Eid, engagements, and get-togethers.',i:mandala({petals:6,rings:1,stroke:'#5c6b3a',w:6,dots:false})},
+ {t:'Minimal Henna',d:'Small, elegant designs for wrists, fingers and ankles. Simple and modern.',i:'<g fill="none" stroke="#d9a441" stroke-width="7" stroke-linecap="round"><path d="M-70 20 Q-20 -60 20 -10 T80 -30"/><circle cx="80" cy="-30" r="8"/></g>'}
+];
+document.getElementById('svc').innerHTML = services.map(function(s){
+  return '<article class="card">'+icon(s.i)+'<h3>'+s.t+'</h3><p>'+s.d+'</p></article>';
+}).join('');
+
+/* Gallery */
+var gal=[
+ ['Bridal',mandala({petals:14,rings:4,stroke:'#f0d9b5'})],
+ ['Arabic',vine('#f0d9b5')],
+ ['Floral',mandala({petals:8,rings:3,stroke:'#f0d9b5',dots:false})],
+ ['Mandala',mandala({petals:16,rings:3,stroke:'#f0d9b5',w:.9})],
+ ['Minimal',vine('#f0d9b5')],
+ ['Party',mandala({petals:6,rings:3,stroke:'#f0d9b5'})]
+];
+document.getElementById('grid').innerHTML = gal.map(function(g,i){
+  return '<figure class="tile">'+svg(g[1])+'<span>'+g[0]+'</span></figure>';
+}).join('');
+
+/* Nav behaviour */
+var hdr=document.querySelector('header'), burger=document.querySelector('.burger'), menu=document.getElementById('menu');
+addEventListener('scroll',function(){hdr.classList.toggle('solid',scrollY>40)},{passive:true});
+burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+menu.addEventListener('click',function(e){if(e.target.tagName==='A'){menu.classList.remove('open');burger.setAttribute('aria-expanded','false')}});
+
+/* Booking form -> WhatsApp */
+document.getElementById('bookForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var t='Hi Shifha, I would like to book henna.%0AName: '+encodeURIComponent(n.value)+
+        '%0AStyle: '+encodeURIComponent(s.value)+
+        '%0ADate: '+encodeURIComponent(d.value||'Not decided')+
+        '%0AMessage: '+encodeURIComponent(m.value||'-');
+  window.open('https://wa.me/917907547210?text='+t,'_blank');
+});
+</script>
+</body>
+</html>
